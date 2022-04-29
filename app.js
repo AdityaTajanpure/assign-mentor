@@ -191,7 +191,7 @@ app.post("/updateStudentsMentor", async (req, res) => {
   }
 });
 
-app.get("/getStudentsByMentorBy", async (req, res) => {
+app.get("/getStudentsByMentorId", async (req, res) => {
   let mentorId = req.query.mentorId;
 
   let mentor = await client
